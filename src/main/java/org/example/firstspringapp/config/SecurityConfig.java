@@ -14,14 +14,20 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/").permitAll() // Разрешить доступ к "/" без аутентификации
+                        .requestMatchers("/", "/multiply", "/error/**").permitAll() // Allow access to "/", "/multiply", and error pages
                         .anyRequest().authenticated()
                 )
                 .formLogin(form -> form
                         .loginPage("/login")
+                        .defaultSuccessUrl("/home", true)
                         .permitAll()
                 )
-                .logout(logout -> logout.permitAll());
+                .logout(logout -> logout
+                        .logoutUrl("/logout")
+                        .logoutSuccessUrl("/login")
+                        .permitAll()
+                )
+                .csrf(csrf -> csrf.disable()); // Updated CSRF configuration
         return http.build();
     }
 }

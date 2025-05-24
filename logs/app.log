@@ -320,3 +320,134 @@ This generated password is for development use only. Your security configuration
 2025-05-24 20:31:32 INFO  LocalContainerEntityManagerFactoryBean:660 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-05-24 20:31:32 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
 2025-05-24 20:31:32 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2025-05-24 20:45:21 INFO  Version:21 - HV000001: Hibernate Validator 8.0.2.Final
+2025-05-24 20:45:21 INFO  FirstSpringAppApplication:53 - Starting FirstSpringAppApplication using Java 23.0.2 with PID 30324 (C:\Users\Lenovo\IdeaProjects\first-spring-app\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\first-spring-app)
+2025-05-24 20:45:21 DEBUG FirstSpringAppApplication:54 - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-05-24 20:45:21 INFO  FirstSpringAppApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-05-24 20:45:21 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-24 20:45:21 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-24 20:45:21 INFO  RepositoryConfigurationDelegate:145 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 20:45:21 INFO  RepositoryConfigurationDelegate:213 - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2025-05-24 20:45:22 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2025-05-24 20:45:22 INFO  Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-24 20:45:22 INFO  StandardService:168 - Starting service [Tomcat]
+2025-05-24 20:45:22 INFO  StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-24 20:45:22 INFO  [/]:168 - Initializing Spring embedded WebApplicationContext
+2025-05-24 20:45:22 INFO  ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 1116 ms
+2025-05-24 20:45:22 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 20:45:22 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-24 20:45:22 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-05-24 20:45:22 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 20:45:22 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2025-05-24 20:45:23 INFO  HikariPool:575 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@550c020c
+2025-05-24 20:45:23 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2025-05-24 20:45:23 WARN  deprecation:153 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 20:45:23 WARN  deprecation:101 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-24 20:45:23 INFO  pooling:163 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 20:45:23 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 20:45:23 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 20:45:23 WARN  JpaBaseConfiguration$JpaWebConfiguration:258 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 20:45:23 WARN  UserDetailsServiceAutoConfiguration:90 - 
+
+Using generated security password: 9db1c208-a7d0-445b-8270-54bc78406396
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-24 20:45:23 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:110 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-24 20:45:24 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-05-24 20:45:24 INFO  Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-24 20:45:24 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-24 20:45:24 INFO  FirstSpringAppApplication:59 - Started FirstSpringAppApplication in 3.214 seconds (process running for 4.268)
+2025-05-24 20:45:33 INFO  [/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 20:45:33 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 20:45:33 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2025-05-24 20:45:33 INFO  HomeController:14 - Received request to /
+2025-05-24 20:45:33 WARN  PageNotFound:1301 - No mapping for GET /login
+2025-05-24 20:45:33 ERROR CustomExceptionHandler:37 - Page not found: /login
+2025-05-24 20:45:33 WARN  ExceptionHandlerExceptionResolver:254 - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /login.]
+2025-05-24 20:45:36 INFO  HomeController:14 - Received request to /
+2025-05-24 20:45:41 WARN  PageNotFound:1301 - No mapping for GET /login
+2025-05-24 20:45:41 ERROR CustomExceptionHandler:37 - Page not found: /login
+2025-05-24 20:45:41 WARN  ExceptionHandlerExceptionResolver:254 - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /login.]
+2025-05-24 20:45:48 INFO  HomeController:14 - Received request to /
+2025-05-24 20:46:06 WARN  PageNotFound:1301 - No mapping for GET /login
+2025-05-24 20:46:06 ERROR CustomExceptionHandler:37 - Page not found: /login
+2025-05-24 20:46:06 WARN  ExceptionHandlerExceptionResolver:254 - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /login.]
+2025-05-24 20:46:33 WARN  PageNotFound:1301 - No mapping for GET /login
+2025-05-24 20:46:33 ERROR CustomExceptionHandler:37 - Page not found: /login
+2025-05-24 20:46:33 WARN  ExceptionHandlerExceptionResolver:254 - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /login.]
+2025-05-24 20:47:43 WARN  PageNotFound:1301 - No mapping for GET /login
+2025-05-24 20:47:43 ERROR CustomExceptionHandler:37 - Page not found: /login
+2025-05-24 20:47:43 WARN  ExceptionHandlerExceptionResolver:254 - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /login.]
+2025-05-24 20:47:47 WARN  PageNotFound:1301 - No mapping for GET /login
+2025-05-24 20:47:47 ERROR CustomExceptionHandler:37 - Page not found: /login
+2025-05-24 20:47:47 WARN  ExceptionHandlerExceptionResolver:254 - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /login.]
+2025-05-24 20:51:46 INFO  GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 20:51:46 INFO  GracefulShutdown:76 - Graceful shutdown complete
+2025-05-24 20:51:46 INFO  LocalContainerEntityManagerFactoryBean:660 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 20:51:46 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2025-05-24 20:51:46 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2025-05-24 20:51:52 INFO  Version:21 - HV000001: Hibernate Validator 8.0.2.Final
+2025-05-24 20:51:52 INFO  FirstSpringAppApplication:53 - Starting FirstSpringAppApplication using Java 23.0.2 with PID 13644 (C:\Users\Lenovo\IdeaProjects\first-spring-app\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\first-spring-app)
+2025-05-24 20:51:52 DEBUG FirstSpringAppApplication:54 - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-05-24 20:51:52 INFO  FirstSpringAppApplication:652 - No active profile set, falling back to 1 default profile: "default"
+2025-05-24 20:51:52 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-24 20:51:52 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-24 20:51:52 INFO  RepositoryConfigurationDelegate:145 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 20:51:52 INFO  RepositoryConfigurationDelegate:213 - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2025-05-24 20:51:53 INFO  TomcatWebServer:111 - Tomcat initialized with port 8080 (http)
+2025-05-24 20:51:53 INFO  Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-24 20:51:53 INFO  StandardService:168 - Starting service [Tomcat]
+2025-05-24 20:51:53 INFO  StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-24 20:51:53 INFO  [/]:168 - Initializing Spring embedded WebApplicationContext
+2025-05-24 20:51:53 INFO  ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 1141 ms
+2025-05-24 20:51:53 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 20:51:53 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-24 20:51:53 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-05-24 20:51:53 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 20:51:54 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2025-05-24 20:51:54 INFO  HikariPool:575 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ed645e9
+2025-05-24 20:51:54 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2025-05-24 20:51:54 WARN  deprecation:153 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 20:51:54 WARN  deprecation:101 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-24 20:51:54 INFO  pooling:163 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 20:51:54 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 20:51:54 INFO  LocalContainerEntityManagerFactoryBean:447 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 20:51:54 WARN  JpaBaseConfiguration$JpaWebConfiguration:258 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 20:51:54 WARN  UserDetailsServiceAutoConfiguration:90 - 
+
+Using generated security password: de5c79b5-a7b4-444e-ab17-907f3cd17d9f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-24 20:51:54 INFO  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:110 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-24 20:51:55 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2025-05-24 20:51:55 INFO  Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-24 20:51:55 INFO  TomcatWebServer:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-24 20:51:55 INFO  FirstSpringAppApplication:59 - Started FirstSpringAppApplication in 3.437 seconds (process running for 4.496)
+2025-05-24 20:52:13 INFO  [/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 20:52:13 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 20:52:13 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2025-05-24 20:52:13 WARN  PageNotFound:1301 - No mapping for GET /login
+2025-05-24 20:52:13 ERROR CustomExceptionHandler:37 - Page not found: /login
+2025-05-24 20:52:13 WARN  ExceptionHandlerExceptionResolver:254 - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /login.]
+2025-05-24 20:52:28 WARN  PageNotFound:1301 - No mapping for GET /login
+2025-05-24 20:52:28 ERROR CustomExceptionHandler:37 - Page not found: /login
+2025-05-24 20:52:28 WARN  ExceptionHandlerExceptionResolver:254 - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /login.]
+2025-05-24 20:52:30 WARN  PageNotFound:1301 - No mapping for GET /login
+2025-05-24 20:52:30 ERROR CustomExceptionHandler:37 - Page not found: /login
+2025-05-24 20:52:30 WARN  ExceptionHandlerExceptionResolver:254 - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /login.]
