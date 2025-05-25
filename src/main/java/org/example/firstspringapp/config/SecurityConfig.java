@@ -16,7 +16,8 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/", "/login", "/signup", "/confirm", "/css/**").permitAll()
+                        .requestMatchers("/", "/login", "/signup", "/confirm", "/css/**", "/files/**").permitAll()
+                        .requestMatchers("/orders/**").authenticated()
                         .anyRequest().authenticated()
                 )
                 .formLogin(form -> form
@@ -29,7 +30,7 @@ public class SecurityConfig {
                         .logoutSuccessUrl("/login?logout")
                         .permitAll()
                 )
-                .csrf(csrf -> csrf.ignoringRequestMatchers("/signup", "/confirm")); // Отключить CSRF для регистрации
+                .csrf(csrf -> csrf.ignoringRequestMatchers("/signup", "/confirm"));
         return http.build();
     }
 

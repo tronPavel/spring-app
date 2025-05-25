@@ -73,4 +73,7 @@ public class UserService implements UserDetailsService {
                 Collections.singletonList(new org.springframework.security.core.authority.SimpleGrantedAuthority("ROLE_USER"))
         );
     }
+    public User findByUsername(String username) {
+        return userRepository.findByUsername(username).orElse(null);
+    }
 }
