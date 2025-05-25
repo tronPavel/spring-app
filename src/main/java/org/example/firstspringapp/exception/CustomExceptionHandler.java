@@ -17,7 +17,7 @@ public class CustomExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ModelAndView handleNumberFormatException(NumberFormatException ex) {
         logger.error("NumberFormatException occurred: {}", ex.getMessage());
-        ModelAndView modelAndView = new ModelAndView("error/400");
+        ModelAndView modelAndView = new ModelAndView("400");
         modelAndView.addObject("message", "Invalid number format. Please provide a valid number.");
         return modelAndView;
     }
@@ -26,7 +26,7 @@ public class CustomExceptionHandler {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ModelAndView handleGenericException(Exception ex) {
         logger.error("Unexpected error occurred: {}", ex.getMessage());
-        ModelAndView modelAndView = new ModelAndView("error/500");
+        ModelAndView modelAndView = new ModelAndView("500");
         modelAndView.addObject("message", "Internal server error. Please try again later.");
         return modelAndView;
     }
@@ -35,7 +35,7 @@ public class CustomExceptionHandler {
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ModelAndView handleNotFoundException(NoHandlerFoundException ex) {
         logger.error("Page not found: {}", ex.getRequestURL());
-        ModelAndView modelAndView = new ModelAndView("error/404");
+        ModelAndView modelAndView = new ModelAndView("404");
         modelAndView.addObject("message", "Page not found: " + ex.getRequestURL());
         return modelAndView;
     }
